@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub — Version Control & Collaboration Platform | DevOps Mini-Project</title>
+  <meta name="description"
+    content="Comprehensive educational website on GitHub for B.Tech DevOps Mini-Project. Covers Version Control, Git vs GitHub, Workflow, Commands, and Interactive Quiz.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-brand">
+        <i class="fa-brands fa-github brand-icon"></i>
+        <span>Git<span class="gradient-text">DevOps</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="nav-item"><a href="#intro" class="nav-link"><i class="fa-solid fa-book-open"></i> Intro</a></li>
+        <li class="nav-item"><a href="#git-vs-github" class="nav-link"><i class="fa-solid fa-code-compare"></i> Git vs
+            GitHub</a></li>
+        <li class="nav-item"><a href="#features" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles"></i>
+            Features</a></li>
+        <li class="nav-item"><a href="#concepts" class="nav-link"><i class="fa-solid fa-cubes"></i> Core Concepts</a>
+        </li>
+        <li class="nav-item"><a href="#workflow" class="nav-link"><i class="fa-solid fa-diagram-project"></i>
+            Workflow</a></li>
+        <li class="nav-item"><a href="#commands" class="nav-link"><i class="fa-solid fa-terminal"></i> Commands</a></li>
+        <li class="nav-item"><a href="#applications" class="nav-link"><i class="fa-solid fa-rocket"></i>
+            Applications</a></li>
+        <li class="nav-item"><a href="#quiz" class="nav-link nav-btn"><i class="fa-solid fa-circle-question"></i> Quiz
+            (10 Qs)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-graduation-cap"></i> B.Tech DevOps Mini-Project
+      </div>
+      <h1 class="hero-title">
+        Mastering <span class="gradient-text">GitHub</span><br>
+        Version Control & Collaboration Platform
+      </h1>
+      <p class="hero-subtitle">
+        An educational portal exploring how GitHub powers the modern DevOps lifecycle — from distributed version control
+        and branch management to collaborative code reviews and automated workflows.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#intro" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Explore Guide</a>
+        <a href="#workflow" class="btn btn-secondary"><i class="fa-solid fa-diagram-project"></i> View Workflow</a>
+        <a href="#quiz" class="btn btn-accent"><i class="fa-solid fa-circle-check"></i> Take Knowledge Quiz</a>
+      </div>
+
+      <!-- Quick Metrics Grid -->
+      <div class="hero-metrics">
+        <div class="metric-card">
+          <i class="fa-solid fa-code-branch metric-icon"></i>
+          <div class="metric-value">100M+</div>
+          <div class="metric-label">Developers Worldwide</div>
+        </div>
+        <div class="metric-card">
+          <i class="fa-solid fa-box-archive metric-icon"></i>
+          <div class="metric-value">400M+</div>
+          <div class="metric-label">Repositories Hosted</div>
+        </div>
+        <div class="metric-card">
+          <i class="fa-solid fa-building-shield metric-icon"></i>
+          <div class="metric-value">90%</div>
+          <div class="metric-label">Fortune 100 Companies</div>
+        </div>
+        <div class="metric-card">
+          <i class="fa-solid fa-bolt metric-icon"></i>
+          <div class="metric-value">De-Facto</div>
+          <div class="metric-label">DevOps Version Hub</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Introduction to GitHub -->
+  <section class="section" id="intro">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-book"></i> Overview</div>
+        <h2 class="section-title">Introduction to <span class="gradient-text">GitHub</span></h2>
+        <p class="section-desc">The world's leading cloud-based Git repository hosting service and developer platform.
+        </p>
+      </div>
+
+      <div class="grid grid-2 intro-grid">
+        <div class="card intro-card">
+          <div class="card-icon-box"><i class="fa-brands fa-github"></i></div>
+          <h3>What is GitHub?</h3>
+          <p>
+            <strong>GitHub</strong> is a cloud-based hosting service and collaboration platform built on top of the
+            <strong>Git</strong> distributed version control system. Founded in <strong>2008</strong> by Chris
+            Wanstrath, P. J. Hyett, Tom Preston-Werner, and Scott Chacon, and acquired by <strong>Microsoft</strong> in
+            2018, it serves as the central hub for open-source and proprietary software development.
+          </p>
+          <p>
+            While Git provides the local mechanism to track file history and branch code, GitHub adds a rich web
+            interface, social coding features, access controls, project management tools, issue tracking, and automated
+            CI/CD capabilities.
+          </p>
+          <div class="intro-pills">
+            <span class="pill"><i class="fa-solid fa-cloud"></i> Cloud Hosted</span>
+            <span class="pill"><i class="fa-solid fa-users"></i> Social Coding</span>
+            <span class="pill"><i class="fa-solid fa-shield-halved"></i> Enterprise Security</span>
+            <span class="pill"><i class="fa-solid fa-gears"></i> CI/CD Ready</span>
+          </div>
+        </div>
+
+        <div class="card intro-card">
+          <div class="card-icon-box"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>GitHub's Critical Role in DevOps</h3>
+          <p>
+            In DevOps culture, version control is the foundational pillar upon which continuous delivery depends. GitHub
+            acts as the <strong>Single Source of Truth (SSoT)</strong> across the entire software delivery lifecycle:
+          </p>
+          <ul class="feature-list">
+            <li>
+              <i class="fa-solid fa-circle-check text-purple"></i>
+              <div><strong>Code Collaboration:</strong> Teams concurrently develop distinct features without stepping on
+                each other's work via branches and pull requests.</div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check text-purple"></i>
+              <div><strong>Quality Gates:</strong> Peer code reviews, branch protection rules, and mandatory status
+                checks guarantee production-ready code.</div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check text-purple"></i>
+              <div><strong>Auditability & Traceability:</strong> Every change, commit, discussion, and release is
+                permanently recorded with cryptographic SHA integrity.</div>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check text-purple"></i>
+              <div><strong>Automated Pipeline Trigger:</strong> Code pushes and PR merges seamlessly trigger continuous
+                integration and continuous deployment (CI/CD) pipelines.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Git vs GitHub -->
+  <section class="section section-darker" id="git-vs-github">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-code-compare"></i> Core Distinction</div>
+        <h2 class="section-title"><span class="gradient-text">Git</span> versus <span
+            class="gradient-text">GitHub</span></h2>
+        <p class="section-desc">Students frequently confuse Git and GitHub. Understanding their differences is
+          fundamental in DevOps.</p>
+      </div>
+
+      <!-- Quick Comparison Cards -->
+      <div class="grid grid-2 vs-cards">
+        <div class="card vs-card vs-git">
+          <div class="vs-header">
+            <i class="fa-brands fa-git-alt vs-icon"></i>
+            <div>
+              <h3>Git</h3>
+              <span class="badge badge-orange">The Version Control Tool</span>
+            </div>
+          </div>
+          <p class="vs-summary">
+            A free, open-source, distributed command-line version control software installed locally on a computer to
+            record and track file changes.
+          </p>
+          <ul class="vs-specs">
+            <li><i class="fa-solid fa-terminal"></i> <strong>Interface:</strong> Command Line / Local GUI</li>
+            <li><i class="fa-solid fa-wifi"></i> <strong>Network:</strong> 100% Offline operation</li>
+            <li><i class="fa-solid fa-user"></i> <strong>Creator:</strong> Linus Torvalds (2005)</li>
+            <li><i class="fa-solid fa-microchip"></i> <strong>Execution:</strong> Runs locally on your machine</li>
+          </ul>
+        </div>
+
+        <div class="card vs-card vs-github">
+          <div class="vs-header">
+            <i class="fa-brands fa-github vs-icon"></i>
+            <div>
+              <h3>GitHub</h3>
+              <span class="badge badge-purple">The Cloud Collaboration Platform</span>
+            </div>
+          </div>
+          <p class="vs-summary">
+            A web-based SaaS platform that hosts Git repositories in the cloud and equips teams with collaboration, PRs,
+            issue tracking, and automation.
+          </p>
+          <ul class="vs-specs">
+            <li><i class="fa-solid fa-globe"></i> <strong>Interface:</strong> Web Browser, Desktop App, GitHub CLI</li>
+            <li><i class="fa-solid fa-cloud"></i> <strong>Network:</strong> Cloud-hosted (requires internet for sync)
+            </li>
+            <li><i class="fa-solid fa-building"></i> <strong>Owner:</strong> Microsoft / GitHub Inc. (2008)</li>
+            <li><i class="fa-solid fa-server"></i> <strong>Execution:</strong> Runs on distributed cloud servers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="table-container card">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Comparison Aspect</th>
+              <th><i class="fa-brands fa-git-alt text-orange"></i> Git</th>
+              <th><i class="fa-brands fa-github text-purple"></i> GitHub</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Type & Nature</strong></td>
+              <td>Software / Distributed VCS tool</td>
+              <td>Cloud-based hosting & collaboration platform</td>
+            </tr>
+            <tr>
+              <td><strong>Installation</strong></td>
+              <td>Installed locally on developer's OS</td>
+              <td>No local software required; accessed via web/cloud</td>
+            </tr>
+            <tr>
+              <td><strong>Internet Dependency</strong></td>
+              <td>Completely functional offline (local commits & branching)</td>
+              <td>Requires internet connectivity to push, pull, review PRs</td>
+            </tr>
+            <tr>
+              <td><strong>Primary Function</strong></td>
+              <td>Tracks file history, versions, and branch merges</td>
+              <td>Central repository sharing, team collaboration, code reviews</td>
+            </tr>
+            <tr>
+              <td><strong>Collaboration Tools</strong></td>
+              <td>None built-in (relies on patches or remote transfers)</td>
+              <td>Pull Requests, Issues, Discussions, Project Boards, Wikis</td>
+            </tr>
+            <tr>
+              <td><strong>GUI & Visualization</strong></td>
+              <td>Minimal built-in GUI (gitk/git-gui) or 3rd party tools</td>
+              <td>Rich graphical interface with diffs, graphs, & insights</td>
+            </tr>
+            <tr>
+              <td><strong>Automation & CI/CD</strong></td>
+              <td>Provides hooks (`pre-commit`, `post-receive`)</td>
+              <td>GitHub Actions for complete automated CI/CD workflows</td>
+            </tr>
+            <tr>
+              <td><strong>Alternatives</strong></td>
+              <td>Mercurial, SVN, Bazaar</td>
+              <td>GitLab, Bitbucket, Azure Repos, AWS CodeCommit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: GitHub Features -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Capabilities</div>
+        <h2 class="section-title">Key Features of <span class="gradient-text">GitHub</span></h2>
+        <p class="section-desc">Essential capabilities that make GitHub the centerpiece of modern team development.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Feature 1 -->
+        <div class="card feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-code-pull-request"></i></div>
+          <h3>Pull Requests (PRs)</h3>
+          <p>
+            Propose changes to a codebase, compare line-by-line differences, leave inline comments, request approvals,
+            and enforce automated checks before merging.
+          </p>
+          <span class="feature-tag">Collaboration</span>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-list-check"></i></div>
+          <h3>Issues & Projects</h3>
+          <p>
+            Track bugs, enhancements, and tasks. Organize sprints using customizable Kanban project boards, milestones,
+            assignees, and labels for Agile management.
+          </p>
+          <span class="feature-tag">Project Management</span>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>GitHub Actions (CI/CD)</h3>
+          <p>
+            Automate build, test, and deployment pipelines directly from repository events (push, pull request, release)
+            using declarative YAML configuration files.
+          </p>
+          <span class="feature-tag">Automation</span>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="card feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-shield-virus"></i></div>
+          <h3>Security & Dependabot</h3>
+          <p>
+            Automated dependency scanning, secret leakage prevention, vulnerability alerts, and automated pull requests
+            to update outdated libraries safely.
+          </p>
+          <span class="feature-tag">DevSecOps</span>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="card feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+          <h3>Branch Protection Rules</h3>
+          <p>
+            Prevent accidental deletions and force compliance by requiring peer reviews, linear history, passing status
+            checks, and blocking direct pushes to `main`.
+          </p>
+          <span class="feature-tag">Governance</span>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="card feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-file-code"></i></div>
+          <h3>GitHub Pages</h3>
+          <p>
+            Instantly host static web apps, documentation, portfolios, and project showcases directly from HTML, CSS,
+            and JS stored in repository branches.
+          </p>
+          <span class="feature-tag">Hosting</span>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="card feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-code-fork"></i></div>
+          <h3>Forking & Social Coding</h3>
+          <p>
+            Make an independent personal copy of any public repository to experiment freely and contribute changes back
+            upstream to the original open-source project.
+          </p>
+          <span class="feature-tag">Open Source</span>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="card feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-comments"></i></div>
+          <h3>Discussions & Wiki</h3>
+          <p>
+            Foster community questions, RFC architecture debates, and maintain comprehensive project documentation
+            without cluttering issue trackers.
+          </p>
+          <span class="feature-tag">Documentation</span>
+        </div>
+
+        <!-- Feature 9 -->
+        <div class="card feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Codespaces & Web Editor</h3>
+          <p>
+            Full cloud-hosted Visual Studio Code development environment in your browser, provisioned in seconds with
+            pre-installed toolchains and extensions.
+          </p>
+          <span class="feature-tag">Cloud IDE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Core Concepts -->
+  <section class="section section-darker" id="concepts">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-cubes"></i> Foundations</div>
+        <h2 class="section-title">Core Git & GitHub <span class="gradient-text">Concepts</span></h2>
+        <p class="section-desc">Master the five fundamental building blocks every DevOps engineer must know.</p>
+      </div>
+
+      <!-- Interactive Concept Tabs -->
+      <div class="concept-tabs">
+        <button class="tab-btn active" data-tab="tab-repo"><i class="fa-solid fa-box-archive"></i> 1.
+          Repository</button>
+        <button class="tab-btn" data-tab="tab-commit"><i class="fa-solid fa-circle-dot"></i> 2. Commit</button>
+        <button class="tab-btn" data-tab="tab-branch"><i class="fa-solid fa-code-branch"></i> 3. Branch</button>
+        <button class="tab-btn" data-tab="tab-pr"><i class="fa-solid fa-code-pull-request"></i> 4. Pull Request</button>
+        <button class="tab-btn" data-tab="tab-merge"><i class="fa-solid fa-code-merge"></i> 5. Merging</button>
+      </div>
+
+      <!-- Tab Content Panels -->
+      <div class="tab-content-wrapper">
+        <!-- 1. Repository -->
+        <div class="tab-panel active" id="tab-repo">
+          <div class="card concept-detail-card">
+            <div class="concept-header">
+              <span class="badge badge-purple">Building Block 1</span>
+              <h3>Repository (Repo): The Project Container</h3>
+            </div>
+            <p>
+              A <strong>Repository</strong> is the virtual storage directory that contains all project files, assets,
+              documentation, and the entire revision history recorded inside the hidden <code>.git/</code> directory.
+            </p>
+
+            <div class="grid grid-2 concept-subgrid">
+              <div class="subcard">
+                <h4><i class="fa-solid fa-folder-tree text-purple"></i> Repository Anatomy</h4>
+                <ul class="styled-list">
+                  <li><strong>.git/ folder:</strong> Hidden directory storing all commits, trees, blobs, references, and
+                    configuration.</li>
+                  <li><strong>README.md:</strong> The front door of your project explaining setup, installation, and
+                    purpose.</li>
+                  <li><strong>.gitignore:</strong> Specifies intentionally untracked files (e.g.,
+                    <code>node_modules/</code>, build artifacts, API keys).
+                  </li>
+                  <li><strong>LICENSE:</strong> Defines legal permissions (MIT, Apache 2.0, GPL) for project code reuse.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="subcard">
+                <h4><i class="fa-solid fa-arrows-split-up-and-left text-cyan"></i> Types of Repositories</h4>
+                <ul class="styled-list">
+                  <li><strong>Local Repository:</strong> Exists on your computer's local filesystem where you edit and
+                    commit code.</li>
+                  <li><strong>Remote Repository:</strong> Hosted on GitHub's servers (usually aliased as
+                    <code>origin</code>) used to synchronize changes.
+                  </li>
+                  <li><strong>Public vs Private:</strong> Public repositories are visible to the world; Private
+                    repositories restrict access to designated collaborators.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Commit -->
+        <div class="tab-panel" id="tab-commit">
+          <div class="card concept-detail-card">
+            <div class="concept-header">
+              <span class="badge badge-purple">Building Block 2</span>
+              <h3>Commit: The Immutable Project Snapshot</h3>
+            </div>
+            <p>
+              A <strong>Commit</strong> is a permanent snapshot of your staged files at a specific moment in time.
+              Unlike older VCS systems that store file diffs, Git stores a complete snapshot of how all files look,
+              referencing unchanged files via pointers.
+            </p>
+
+            <!-- 3 Trees Diagram -->
+            <div class="flow-diagram-box">
+              <div class="flow-step">
+                <div class="flow-icon"><i class="fa-regular fa-file-code"></i></div>
+                <div class="flow-title">Working Directory</div>
+                <div class="flow-desc">Unstaged local edits on files</div>
+              </div>
+              <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i><br><code>git add</code></div>
+              <div class="flow-step">
+                <div class="flow-icon"><i class="fa-solid fa-list-check"></i></div>
+                <div class="flow-title">Staging Area (Index)</div>
+                <div class="flow-desc">Files prepared for the snapshot</div>
+              </div>
+              <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i><br><code>git commit</code></div>
+              <div class="flow-step active-flow">
+                <div class="flow-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="flow-title">Repository (.git)</div>
+                <div class="flow-desc">Permanent snapshot stored in history</div>
+              </div>
+            </div>
+
+            <div class="commit-metadata">
+              <h4>Anatomy of a Git Commit:</h4>
+              <div class="code-snippet">
+                commit 4a9f1b2c8e5473a201d1487f94bb231c5e9a4490 (HEAD -> main, origin/main)
+                Author: Developer &lt;developer@college.edu&gt;
+                Date: Mon Nov 23 20:30:00 2026 +0530
+
+                feat(auth): implement OAuth2 login flow with GitHub
+              </div>
+              <p class="small-text text-muted">
+                Every commit is uniquely identified by an irreversible <strong>SHA-1 (40 characters) or SHA-256
+                  hash</strong> ensuring cryptographic integrity.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Branch -->
+        <div class="tab-panel" id="tab-branch">
+          <div class="card concept-detail-card">
+            <div class="concept-header">
+              <span class="badge badge-purple">Building Block 3</span>
+              <h3>Branch: Isolated Line of Development</h3>
+            </div>
+            <p>
+              A <strong>Branch</strong> is a lightweight, movable pointer to a specific commit. Branching allows
+              engineers to diverge from the main production line to build new features, test ideas, or patch bugs in
+              complete isolation.
+            </p>
+
+            <div class="grid grid-2 concept-subgrid">
+              <div class="subcard">
+                <h4><i class="fa-solid fa-code-branch text-purple"></i> Why Branching Matters in DevOps</h4>
+                <ul class="styled-list">
+                  <li><strong>Isolation:</strong> Incomplete code never breaks the production codebase.</li>
+                  <li><strong>Parallel Development:</strong> Multiple team members can work on different features
+                    simultaneously.</li>
+                  <li><strong>Fast & Lightweight:</strong> Creating a branch in Git is virtually instantaneous because
+                    it simply creates a 41-byte pointer file.</li>
+                  <li><strong>HEAD Pointer:</strong> Git uses a special pointer named <code>HEAD</code> to track which
+                    branch you are currently working on.</li>
+                </ul>
+              </div>
+
+              <div class="subcard">
+                <h4><i class="fa-solid fa-tags text-cyan"></i> Common Branching Conventions</h4>
+                <ul class="styled-list">
+                  <li><code>main</code> (or <code>master</code>): Production-ready, stable, deployable code.</li>
+                  <li><code>feature/login-system</code>: Dedicated to developing a specific new feature.</li>
+                  <li><code>bugfix/header-overflow</code>: Resolves non-critical defects in staging.</li>
+                  <li><code>hotfix/payment-error</code>: Critical immediate patch directly applied to production.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Pull Requests -->
+        <div class="tab-panel" id="tab-pr">
+          <div class="card concept-detail-card">
+            <div class="concept-header">
+              <span class="badge badge-purple">Building Block 4</span>
+              <h3>Pull Requests (PR): The Collaboration Heart</h3>
+            </div>
+            <p>
+              A <strong>Pull Request (PR)</strong> is a GitHub-specific mechanism that notifies team members that a
+              feature branch is ready for review. It acts as an open invitation to discuss, inspect diffs, test, and
+              approve proposed code changes before merging into <code>main</code>.
+            </p>
+
+            <div class="grid grid-3 concept-steps-grid">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <h4>Open the PR</h4>
+                <p>Select base branch (e.g. <code>main</code>) and compare branch (e.g. <code>feature</code>). Provide
+                  clear description and screenshots.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <h4>Review & Discuss</h4>
+                <p>Teammates examine unified file diffs, leave line-by-line comments, suggest edits, and request
+                  adjustments.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <h4>Automated Checks</h4>
+                <p>GitHub Actions automatically runs unit tests, linting, and security audits to ensure no regressions
+                  occur.</p>
+              </div>
+            </div>
+
+            <div class="tip-box">
+              <i class="fa-solid fa-lightbulb text-warning"></i>
+              <div>
+                <strong>DevOps Best Practice:</strong> Combine Pull Requests with <em>Branch Protection Rules</em>
+                requiring at least 1 approval and passing CI status checks before merge is permitted.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Merging -->
+        <div class="tab-panel" id="tab-merge">
+          <div class="card concept-detail-card">
+            <div class="concept-header">
+              <span class="badge badge-purple">Building Block 5</span>
+              <h3>Merging & Merge Conflicts: Integrating Changes</h3>
+            </div>
+            <p>
+              <strong>Merging</strong> is the process of integrating commits from an isolated branch (e.g.
+              <code>feature</code>) back into a target branch (e.g. <code>main</code>).
+            </p>
+
+            <div class="grid grid-2 concept-subgrid">
+              <div class="subcard">
+                <h4><i class="fa-solid fa-code-merge text-purple"></i> Merge Strategies on GitHub</h4>
+                <ul class="styled-list">
+                  <li><strong>Fast-Forward Merge:</strong> Moves the branch pointer forward when no divergent commits
+                    exist on target.</li>
+                  <li><strong>3-Way Merge Commit:</strong> Creates a new merge commit combining two divergent histories
+                    with 2 parents.</li>
+                  <li><strong>Squash and Merge:</strong> Combines all feature commits into a single clean commit on
+                    <code>main</code> to keep history tidy.
+                  </li>
+                  <li><strong>Rebase and Merge:</strong> Re-applies individual commits sequentially onto the tip of the
+                    target branch.</li>
+                </ul>
+              </div>
+
+              <div class="subcard">
+                <h4><i class="fa-solid fa-triangle-exclamation text-warning"></i> Merge Conflicts Explained</h4>
+                <p class="small-text">
+                  A <strong>Merge Conflict</strong> occurs when two branches modify the <em>exact same lines</em> of a
+                  file differently. Git pauses the merge and marks the conflict markers:
+                </p>
+                <div class="code-snippet conflict-snippet">
+                  &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD (main branch)
+                  const port = 8080;
+                  =======
+                  const port = 3000;
+                  &gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/custom-port
+                </div>
+                <p class="small-text text-muted">
+                  <strong>Resolution:</strong> The developer manually selects the correct lines, removes the markers,
+                  saves the file, stages with <code>git add</code>, and finalizes with <code>git commit</code>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: GitHub Workflow with Interactive Diagram -->
+  <section class="section" id="workflow">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-diagram-project"></i> Industry Standard</div>
+        <h2 class="section-title">The Standard <span class="gradient-text">GitHub Flow</span></h2>
+        <p class="section-desc">A lightweight, branch-based workflow that teams use to deliver software reliably and
+          continuously.</p>
+      </div>
+
+      <!-- Interactive SVG Diagram Container -->
+      <div class="card workflow-diagram-card">
+        <h3 class="text-center mb-1">Interactive Branch & Merge Architecture</h3>
+        <p class="text-center text-muted mb-3">Click on any workflow node or step below to explore its role in the
+          DevOps pipeline.</p>
+
+        <div class="svg-wrapper">
+          <svg viewBox="0 0 900 320" class="workflow-svg" id="workflowSvg" aria-label="GitHub Flow Diagram">
+            <defs>
+              <linearGradient id="mainLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#6366f1" />
+              </linearGradient>
+              <linearGradient id="featureLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#8b5cf6" />
+                <stop offset="100%" stop-color="#ec4899" />
+              </linearGradient>
+              <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+
+            <!-- Main Branch Track -->
+            <path d="M 50 220 L 850 220" stroke="url(#mainLineGrad)" stroke-width="4" stroke-dasharray="0" />
+            <text x="60" y="255" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="14"
+              font-weight="600">main branch (Production)</text>
+
+            <!-- Feature Branch Divergence -->
+            <path d="M 200 220 C 260 220, 260 100, 340 100 L 620 100 C 700 100, 700 220, 760 220" fill="none"
+              stroke="url(#featureLineGrad)" stroke-width="4" stroke-dasharray="6,6" class="dashed-branch" />
+            <text x="350" y="65" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="14"
+              font-weight="600">feature branch (Isolated Work)</text>
+
+            <!-- Node 1: Base Commit -->
+            <g class="svg-node" data-step="1" transform="translate(120, 220)">
+              <circle r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="4" filter="url(#glow)" />
+              <circle r="6" fill="#38bdf8" />
+              <text y="-25" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="600">Init Commit</text>
+            </g>
+
+            <!-- Node 2: Branch Point -->
+            <g class="svg-node" data-step="2" transform="translate(200, 220)">
+              <circle r="14" fill="#0f172a" stroke="#6366f1" stroke-width="4" filter="url(#glow)" />
+              <circle r="6" fill="#6366f1" />
+              <text y="35" text-anchor="middle" fill="#94a3b8" font-size="12">1. Branch off</text>
+            </g>
+
+            <!-- Node 3: Feature Commit 1 -->
+            <g class="svg-node" data-step="3" transform="translate(340, 100)">
+              <circle r="14" fill="#0f172a" stroke="#8b5cf6" stroke-width="4" filter="url(#glow)" />
+              <circle r="6" fill="#8b5cf6" />
+              <text y="-25" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="600">2. Commit #1</text>
+            </g>
+
+            <!-- Node 4: Feature Commit 2 -->
+            <g class="svg-node" data-step="4" transform="translate(470, 100)">
+              <circle r="14" fill="#0f172a" stroke="#a855f7" stroke-width="4" filter="url(#glow)" />
+              <circle r="6" fill="#a855f7" />
+              <text y="-25" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="600">3. Commit #2</text>
+            </g>
+
+            <!-- Node 5: Pull Request & CI Check -->
+            <g class="svg-node" data-step="5" transform="translate(620, 100)">
+              <circle r="16" fill="#0f172a" stroke="#fbbf24" stroke-width="4" filter="url(#glow)" />
+              <circle r="7" fill="#fbbf24" />
+              <text y="-25" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="700">4. Open PR & CI</text>
+            </g>
+
+            <!-- Node 6: Merge Node -->
+            <g class="svg-node" data-step="6" transform="translate(760, 220)">
+              <circle r="16" fill="#0f172a" stroke="#10b981" stroke-width="4" filter="url(#glow)" />
+              <circle r="7" fill="#10b981" />
+              <text y="35" text-anchor="middle" fill="#10b981" font-size="12" font-weight="700">5. Merge into
+                main</text>
+            </g>
+
+            <!-- Node 7: Production Deploy -->
+            <g class="svg-node" data-step="7" transform="translate(840, 220)">
+              <circle r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="4" filter="url(#glow)" />
+              <circle r="6" fill="#38bdf8" />
+              <text y="-25" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="600">6. Deploy</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Workflow Steps Narrative Grid -->
+        <div class="grid grid-3 workflow-steps-list" id="workflowStepsList">
+          <div class="card step-item-card active" data-step-target="2">
+            <div class="step-badge">Step 1</div>
+            <h4>Create a Feature Branch</h4>
+            <p>Branch off from stable <code>main</code> with a descriptive name (e.g.
+              <code>git switch -c feature/auth</code>).
+            </p>
+          </div>
+
+          <div class="card step-item-card" data-step-target="3">
+            <div class="step-badge">Step 2</div>
+            <h4>Add Commits & Test</h4>
+            <p>Make focused changes, stage them, and write clear, atomic commit messages detailing rationale.</p>
+          </div>
+
+          <div class="card step-item-card" data-step-target="5">
+            <div class="step-badge">Step 3</div>
+            <h4>Open a Pull Request</h4>
+            <p>Push branch to GitHub and open a PR to start team discussion, code comparison, and automated status
+              checks.</p>
+          </div>
+
+          <div class="card step-item-card" data-step-target="5">
+            <div class="step-badge">Step 4</div>
+            <h4>Review & CI Automation</h4>
+            <p>Peers review the diff, request changes, and GitHub Actions runs test suites to ensure zero regressions.
+            </p>
+          </div>
+
+          <div class="card step-item-card" data-step-target="6">
+            <div class="step-badge">Step 5</div>
+            <h4>Merge into Main</h4>
+            <p>Once approved and all checks pass, merge the PR into <code>main</code> and delete the obsolete feature
+              branch.</p>
+          </div>
+
+          <div class="card step-item-card" data-step-target="7">
+            <div class="step-badge">Step 6</div>
+            <h4>Deploy to Production</h4>
+            <p>The updated <code>main</code> branch triggers deployment pipelines to staging or production
+              automatically.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Basic Git Commands with Examples -->
+  <section class="section section-darker" id="commands">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-terminal"></i> Practical Reference</div>
+        <h2 class="section-title">Essential Git Commands & <span class="gradient-text">Examples</span></h2>
+        <p class="section-desc">Handy cheat sheet for daily Git and GitHub operations with one-click copy.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="cmd-filters">
+        <button class="cmd-filter-btn active" data-filter="all">All Commands</button>
+        <button class="cmd-filter-btn" data-filter="setup">Setup & Config</button>
+        <button class="cmd-filter-btn" data-filter="daily">Daily Workflow</button>
+        <button class="cmd-filter-btn" data-filter="branching">Branching & Merging</button>
+        <button class="cmd-filter-btn" data-filter="remote">Remote & GitHub Sync</button>
+      </div>
+
+      <!-- Command Cards Grid -->
+      <div class="grid grid-2 commands-grid" id="commandsGrid">
+        <!-- Command 1 -->
+        <div class="card command-card" data-category="setup">
+          <div class="command-header">
+            <span class="cmd-name">git init</span>
+            <span class="badge badge-blue">Setup</span>
+          </div>
+          <p class="cmd-desc">Initializes a new, empty Git repository in the current working directory, creating the
+            <code>.git</code> folder.
+          </p>
+          <div class="terminal-box">
+            <code>git init my-devops-project</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Example Scenario:</span> Starting a brand new project locally before pushing to
+            GitHub.
+          </div>
+        </div>
+
+        <!-- Command 2 -->
+        <div class="card command-card" data-category="setup">
+          <div class="command-header">
+            <span class="cmd-name">git clone</span>
+            <span class="badge badge-blue">Setup</span>
+          </div>
+          <p class="cmd-desc">Downloads an existing remote GitHub repository and its full commit history to your local
+            computer.</p>
+          <div class="terminal-box">
+            <code>git clone https://github.com/user/devops-repo.git</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Example Scenario:</span> Joining a new team and downloading their shared GitHub
+            codebase.
+          </div>
+        </div>
+
+        <!-- Command 3 -->
+        <div class="card command-card" data-category="daily">
+          <div class="command-header">
+            <span class="cmd-name">git status</span>
+            <span class="badge badge-purple">Daily</span>
+          </div>
+          <p class="cmd-desc">Displays the state of the working directory and staging area: untracked, modified, and
+            staged files.</p>
+          <div class="terminal-box">
+            <code>git status</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Example Scenario:</span> Checking which files were edited before adding them to
+            staging.
+          </div>
+        </div>
+
+        <!-- Command 4 -->
+        <div class="card command-card" data-category="daily">
+          <div class="command-header">
+            <span class="cmd-name">git add</span>
+            <span class="badge badge-purple">Daily</span>
+          </div>
+          <p class="cmd-desc">Stages modified or new files, preparing them to be included in the upcoming commit
+            snapshot.</p>
+          <div class="terminal-box">
+            <code>git add index.html style.css</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Pro Tip:</span> Use <code>git add .</code> to stage all changes in the directory
+            at once.
+          </div>
+        </div>
+
+        <!-- Command 5 -->
+        <div class="card command-card" data-category="daily">
+          <div class="command-header">
+            <span class="cmd-name">git commit -m</span>
+            <span class="badge badge-purple">Daily</span>
+          </div>
+          <p class="cmd-desc">Records a snapshot of all staged changes permanently into the repository history with an
+            explanatory message.</p>
+          <div class="terminal-box">
+            <code>git commit -m "feat: add user authentication form"</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Best Practice:</span> Write descriptive, imperative commit messages (e.g.
+            <em>fix: resolve bug</em>).
+          </div>
+        </div>
+
+        <!-- Command 6 -->
+        <div class="card command-card" data-category="daily">
+          <div class="command-header">
+            <span class="cmd-name">git log --oneline</span>
+            <span class="badge badge-purple">Daily</span>
+          </div>
+          <p class="cmd-desc">Shows the commit history in a concise, readable format with commit SHA hashes and message
+            headers.</p>
+          <div class="terminal-box">
+            <code>git log --oneline --graph --decorate</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Example Scenario:</span> Auditing project commits and tracking when a bug was
+            introduced.
+          </div>
+        </div>
+
+        <!-- Command 7 -->
+        <div class="card command-card" data-category="branching">
+          <div class="command-header">
+            <span class="cmd-name">git branch</span>
+            <span class="badge badge-orange">Branching</span>
+          </div>
+          <p class="cmd-desc">Lists all local branches in the repository. The currently active branch is marked with an
+            asterisk (*).</p>
+          <div class="terminal-box">
+            <code>git branch -a</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Option:</span> <code>-a</code> lists both local and remote-tracking branches.
+          </div>
+        </div>
+
+        <!-- Command 8 -->
+        <div class="card command-card" data-category="branching">
+          <div class="command-header">
+            <span class="cmd-name">git switch -c / checkout -b</span>
+            <span class="badge badge-orange">Branching</span>
+          </div>
+          <p class="cmd-desc">Creates a brand new branch and switches your working directory (<code>HEAD</code>) to it
+            immediately.</p>
+          <div class="terminal-box">
+            <code>git switch -c feature/payment-gateway</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Note:</span> <code>git switch -c</code> is the modern syntax for
+            <code>git checkout -b</code>.
+          </div>
+        </div>
+
+        <!-- Command 9 -->
+        <div class="card command-card" data-category="branching">
+          <div class="command-header">
+            <span class="cmd-name">git merge</span>
+            <span class="badge badge-orange">Branching</span>
+          </div>
+          <p class="cmd-desc">Integrates commits from the specified branch into the currently active branch you are
+            standing on.</p>
+          <div class="terminal-box">
+            <code>git checkout main && git merge feature/payment-gateway</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Example Scenario:</span> Merging your finished feature into <code>main</code>
+            after testing.
+          </div>
+        </div>
+
+        <!-- Command 10 -->
+        <div class="card command-card" data-category="remote">
+          <div class="command-header">
+            <span class="cmd-name">git push</span>
+            <span class="badge badge-green">Remote Sync</span>
+          </div>
+          <p class="cmd-desc">Uploads local branch commits to the corresponding remote repository on GitHub.</p>
+          <div class="terminal-box">
+            <code>git push -u origin feature/payment-gateway</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Flag:</span> <code>-u</code> sets the upstream tracking reference for future
+            simple <code>git push</code>.
+          </div>
+        </div>
+
+        <!-- Command 11 -->
+        <div class="card command-card" data-category="remote">
+          <div class="command-header">
+            <span class="cmd-name">git pull</span>
+            <span class="badge badge-green">Remote Sync</span>
+          </div>
+          <p class="cmd-desc">Fetches and instantly merges commits from the remote GitHub branch into your current local
+            branch.</p>
+          <div class="terminal-box">
+            <code>git pull origin main</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Insight:</span> <code>git pull</code> is technically a combination of
+            <code>git fetch</code> followed by <code>git merge</code>.
+          </div>
+        </div>
+
+        <!-- Command 12 -->
+        <div class="card command-card" data-category="remote">
+          <div class="command-header">
+            <span class="cmd-name">git remote -v</span>
+            <span class="badge badge-green">Remote Sync</span>
+          </div>
+          <p class="cmd-desc">Displays the names and URLs of all remote connections linked to your local repository.</p>
+          <div class="terminal-box">
+            <code>git remote -v</code>
+            <button class="copy-btn" title="Copy command"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="cmd-example">
+            <span class="example-label">Example Output:</span> Shows <code>origin</code> URLs for fetch and push
+            operations.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Advantages and Applications -->
+  <section class="section" id="applications">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-rocket"></i> Impact & Utility</div>
+        <h2 class="section-title">Advantages & Real-World <span class="gradient-text">Applications</span></h2>
+        <p class="section-desc">Why GitHub is the indispensable backbone of engineering teams and enterprise DevOps.</p>
+      </div>
+
+      <!-- Advantages Grid -->
+      <h3 class="subsection-title"><i class="fa-solid fa-thumbs-up text-purple"></i> Key Advantages of GitHub</h3>
+      <div class="grid grid-3 mb-4">
+        <div class="card adv-card">
+          <div class="adv-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+          <h4>Seamless Team Collaboration</h4>
+          <p>Enables hundreds of developers to work on a single codebase in parallel without overwriting each other's
+            code or losing changes.</p>
+        </div>
+
+        <div class="card adv-card">
+          <div class="adv-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <h4>Complete History & Disaster Recovery</h4>
+          <p>Every line of code is tracked back to its author and commit. If a regression occurs in production, revert
+            in seconds.</p>
+        </div>
+
+        <div class="card adv-card">
+          <div class="adv-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+          <h4>Integrated Quality & CI/CD</h4>
+          <p>Automate testing, build artifacts, linting, and deployments with GitHub Actions directly triggered on code
+            push or PR creation.</p>
+        </div>
+
+        <div class="card adv-card">
+          <div class="adv-icon"><i class="fa-solid fa-globe"></i></div>
+          <h4>Open Source Community</h4>
+          <p>Home to the world's greatest open-source initiatives (Linux, Kubernetes, React, Python) offering unlimited
+            global collaboration.</p>
+        </div>
+
+        <div class="card adv-card">
+          <div class="adv-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Built-in DevSecOps & Compliance</h4>
+          <p>Automated secret scanning prevents leaks of API keys, and Dependabot automatically patches known security
+            vulnerabilities.</p>
+        </div>
+
+        <div class="card adv-card">
+          <div class="adv-icon"><i class="fa-solid fa-id-badge"></i></div>
+          <h4>Developer Portfolio & Resume</h4>
+          <p>A developer's GitHub contribution graph acts as a verifiable public portfolio of coding activity, project
+            history, and collaborative skills.</p>
+        </div>
+      </div>
+
+      <!-- Real-World Applications Grid -->
+      <h3 class="subsection-title"><i class="fa-solid fa-industry text-cyan"></i> Real-World DevOps Applications</h3>
+      <div class="grid grid-2">
+        <div class="card app-card">
+          <div class="app-header">
+            <i class="fa-solid fa-network-wired app-icon"></i>
+            <div>
+              <h4>1. GitOps & Infrastructure as Code (IaC)</h4>
+              <span class="badge badge-blue">Enterprise DevOps</span>
+            </div>
+          </div>
+          <p>
+            In modern cloud environments, infrastructure (Terraform, Ansible, Kubernetes manifests) is stored in GitHub
+            repositories. Merging a pull request automatically updates cloud infrastructure declaratively using Git as
+            the Single Source of Truth.
+          </p>
+        </div>
+
+        <div class="card app-card">
+          <div class="app-header">
+            <i class="fa-solid fa-server app-icon"></i>
+            <div>
+              <h4>2. Continuous Integration & Delivery (CI/CD)</h4>
+              <span class="badge badge-purple">Pipeline Automation</span>
+            </div>
+          </div>
+          <p>
+            Development teams connect GitHub webhooks to automated CI runners. Whenever developers create a PR, tests
+            run in isolated runner containers to ensure zero broken builds enter production.
+          </p>
+        </div>
+
+        <div class="card app-card">
+          <div class="app-header">
+            <i class="fa-solid fa-graduation-cap app-icon"></i>
+            <div>
+              <h4>3. Academic & Collaborative Student Projects</h4>
+              <span class="badge badge-orange">Education</span>
+            </div>
+          </div>
+          <p>
+            Engineering students utilize GitHub to manage team coursework, assign tasks via Project Kanban boards,
+            submit transparent commit contributions, and publish live project demos with GitHub Pages.
+          </p>
+        </div>
+
+        <div class="card app-card">
+          <div class="app-header">
+            <i class="fa-solid fa-book-bookmark app-icon"></i>
+            <div>
+              <h4>4. Documentation & Open-Access Knowledge</h4>
+              <span class="badge badge-green">Knowledge Base</span>
+            </div>
+          </div>
+          <p>
+            Teams store technical specifications, architectural decision records (ADRs), and developer documentation in
+            Markdown within GitHub, tracking version evolution alongside the software.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: Interactive 10-Question Quiz -->
+  <section class="section section-darker" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-circle-question"></i> Assessment</div>
+        <h2 class="section-title">GitHub Knowledge <span class="gradient-text">Quiz</span></h2>
+        <p class="section-desc">Test your understanding with 10 questions covering Git commands, GitHub features, PRs,
+          and workflows.</p>
+      </div>
+
+      <div class="quiz-container card" id="quizContainer">
+        <!-- Quiz Header: Progress & Info -->
+        <div class="quiz-status-bar">
+          <div class="quiz-progress-info">
+            <span>Answered: <strong id="answeredCount">0</strong> of 10</span>
+            <span id="scoreDisplayLive" class="live-score">Score: 0/10</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" id="progressBar" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- Questions Form -->
+        <form id="quizForm">
+          <div class="questions-list" id="questionsList">
+            <!-- Questions dynamically generated by script.js -->
+          </div>
+
+          <div class="quiz-actions">
+            <button type="button" class="btn btn-primary btn-large" id="submitQuizBtn">
+              <i class="fa-solid fa-calculator"></i> Submit Quiz & View Score
+            </button>
+            <button type="button" class="btn btn-secondary" id="resetQuizBtn">
+              <i class="fa-solid fa-arrow-rotate-left"></i> Reset Quiz
+            </button>
+          </div>
+        </form>
+
+        <!-- Quiz Results Modal / Card -->
+        <div class="quiz-result-box hidden" id="quizResultBox">
+          <div class="result-badge" id="resultBadge">
+            <i class="fa-solid fa-trophy" id="resultIcon"></i>
+          </div>
+          <h3 class="result-headline" id="resultHeadline">Quiz Complete!</h3>
+          <div class="result-score" id="resultScore">0 / 10</div>
+          <p class="result-percentage" id="resultPercentage">Score: 0%</p>
+          <p class="result-feedback" id="resultFeedback">Feedback message goes here.</p>
+
+          <div class="result-actions">
+            <button class="btn btn-accent" id="retakeBtn"><i class="fa-solid fa-arrow-rotate-right"></i> Retake
+              Quiz</button>
+            <a href="#concepts" class="btn btn-secondary"><i class="fa-solid fa-book-open"></i> Review Concepts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <i class="fa-brands fa-github brand-icon"></i>
+            <span>Git<span class="gradient-text">DevOps</span></span>
+          </div>
+          <p class="footer-tagline">
+            Educational B.Tech DevOps Mini-Project exploring GitHub as the industry-standard version control and
+            collaborative software development platform.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#git-vs-github">Git vs GitHub</a></li>
+            <li><a href="#features">GitHub Features</a></li>
+            <li><a href="#concepts">Core Concepts</a></li>
+            <li><a href="#workflow">GitHub Flow</a></li>
+            <li><a href="#commands">Git Commands</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#quiz">10-Question Quiz</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-info">
+          <h4>Project Details</h4>
+          <p><strong>Course:</strong> B.Tech DevOps</p>
+          <p><strong>Topic:</strong> GitHub — Version Control & Collaboration Platform</p>
+          <p><strong>Technologies:</strong> Semantic HTML5, Modern CSS3, Vanilla ES6 JavaScript</p>
+          <div class="footer-badges">
+            <span class="badge badge-purple">No External Frameworks</span>
+            <span class="badge badge-blue">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 B.Tech DevOps Mini-Project. Built for educational demonstration and knowledge sharing.</p>
+        <div class="scroll-top-btn" id="scrollTopBtn" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
